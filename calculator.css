@@ -1,0 +1,24 @@
+body {
+  background: grey;
+  text-align: center;
+}
+
+#calculator{
+  height: 400px;
+  width: 300px;
+  background-color: red;
+
+}
+
+#screen{
+  background-color: rgba(0, 255, 0, 0.3);
+  height: 70px;
+}
+
+.col-xs-2 {
+  background-color: grey;
+  height: 70px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
