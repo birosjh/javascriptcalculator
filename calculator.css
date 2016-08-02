@@ -1,24 +1,71 @@
 body {
-  background: grey;
+  background-image: url("https://pixabay.com/static/uploads/photo/2016/06/17/00/27/seven-sisters-1462388_960_720.jpg");
+  background-size: cover;
   text-align: center;
+  font-size: 20px;
 }
 
 #calculator{
-  height: 400px;
-  width: 300px;
-  background-color: red;
-
+  border-radius: 5px;
+  height: 320px;
+  width: 231px;
+  background-color: rgba(72,72,72, 0.8) ;
 }
 
 #screen{
-  background-color: rgba(0, 255, 0, 0.3);
-  height: 70px;
+  position: relative;
+  height: 82px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.col-xs-2 {
-  background-color: grey;
-  height: 70px;
+#value {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #D8D8D8;
+  height: 53px;
+  width: 57.5px;
+
+  margin: -3px -3.25px -3px -3.25px;
   border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  border-color: grey;
+  border-width: .25px;
+  line-height: 45px;
+}
+
+.button p {
+  vertical-align: middle;
+}
+
+.calc-button{
+  background-color: orange;
+  color: white;
+}
+
+.bottom-right {
+  border-radius: 0px 0px 5px 0px;
+}
+
+.long-button {
+  width: 114px;
+  border-radius: 0px 0px 0px 5px;
+}
+
+@media only screen and (max-width: 500px) {
+    #calculator{
+      height: 100%;
+      width: 100%;
+    }
 }
